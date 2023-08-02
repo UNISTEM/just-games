@@ -2,3 +2,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes MOVING-RAINBOW-TEXT {
+	to {
+		background-position: var(--bg-size) 0;
+	}
+}
+
+.rainbow-gradient-text {
+	--bg-size: 400%;
+	color: transparent;
+	display: inline-block;
+	background-size: 500% auto;
+	background: linear-gradient(
+			to right,
+			#ff6663,
+			#feb144,
+			#fdfd97,
+			#9ee09e,
+			#9ec1cf,
+			#cc99c9,
+			#9ec1cf,
+			#9ee09e,
+			#fdfd97,
+			#feb144,
+			#ff6663
+		)
+		0 0 / var(--bg-size) 100%;
+	background-clip: text;
+	animation: MOVING-RAINBOW-TEXT 10s infinite linear;
+}
