@@ -5,12 +5,11 @@
 
 @keyframes MOVING-RAINBOW-TEXT {
 	to {
-		background-position: var(--bg-size) 0;
+		background-position: 200% 0;
 	}
 }
 
 .rainbow-gradient-text {
-	--bg-size: 400%;
 	color: transparent;
 	display: inline-block;
 	background-size: 500% auto;
@@ -28,7 +27,19 @@
 			#feb144,
 			#ff6663
 		)
-		0 0 / var(--bg-size) 100%;
+		0 0 / 200% 100%;
 	background-clip: text;
 	animation: MOVING-RAINBOW-TEXT 10s infinite linear;
+}
+
+button {
+	background-color: white;
+	border-radius: 0px;
+	transition: all 0.5s ease;
+}
+
+button:hover {
+	color: white;
+	border-radius: 20px;
+	transition: background-color 0.5s ease, all 0.5s ease;
 }
