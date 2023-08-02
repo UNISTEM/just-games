@@ -1,1 +1,5 @@
-<h1>Hi!</h1>
+<script>
+	import NavBar from "$lib/ui/NavBar.svelte";
+</script>
+
+<NavBar />
