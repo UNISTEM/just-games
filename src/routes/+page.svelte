@@ -1,7 +1,6 @@
 <script>
 	import Banner from "$lib/ui/home/Banner.svelte";
-	import NavBar from "$lib/ui/NavBar.svelte";
+	export const ssr = false;
 </script>
 
-<NavBar />
 <Banner />
