@@ -1,19 +1,20 @@
 <script>
+	import { palette } from "$lib/palette";
 	import NavButton from "./NavButton.svelte";
 
 	let buttonData = [
-		["/", "home 🏡", "bg-yellow-500"],
-		["/games", "games 🎮", "bg-orange-500"],
-		["/about", "about 🌈", "bg-blue-500"],
-		["/resources", "resources 🧰", "bg-mint-500"],
-		["/login", "log in 🚪", "bg-gradient-to-r from-orange-500 to-blue-500"],
-		["/signup", "sign up ✨", "bg-gradient-to r from-orange-500 to-blue-500 via-yellow-500 via-mint-500"]
+		["/", "home 🏡", "yellow"],
+		["/games", "games 🎮", "orange"],
+		["/about", "about 🌈", "blue"],
+		["/resources", "resources 🧰", "mint"],
+		["/login", "log in 🚪", "login"],
+		["/signup", "sign up ✨", "signup"]
 	];
 </script>
 
 <div class="navbar text-2xl font-semibold grid-cols-6 font-sans inline-grid w-full h-14">
 	{#each buttonData as button}
-		<NavButton anchor={button[0]} text={button[1]} tailwindHoverClass={button[2]} />
+		<NavButton anchor={button[0]} text={button[1]} hoverColor={button[2]} />
 	{/each}
 </div>
 
