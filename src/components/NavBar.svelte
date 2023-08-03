@@ -11,14 +11,15 @@
 	];
 </script>
 
-<div class="text-2xl font-semibold grid-cols-6 font-sans inline-grid w-full h-14 sticky">
+<div class="navbar text-2xl font-semibold grid-cols-6 font-sans inline-grid w-full h-14">
 	{#each buttonData as button}
 		<NavButton anchor={button[0]} text={button[1]} tailwindHoverClass={button[2]} />
 	{/each}
 </div>
 
 <style>
-	div {
+	.navbar {
+		margin-bottom: 50px;
 		padding: 50px;
 	}
 </style>
