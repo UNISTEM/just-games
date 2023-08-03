@@ -3,43 +3,47 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes MOVING-RAINBOW-TEXT {
-	to {
-		background-position: 200% 0;
-	}
+:root {
+	--light-green: #abe188;
+	--flax: #f7ef99;
+	--buff: #f1bb87;
+	--coral: #f78e69;
+	--palette-gradient: linear-gradient(to right, var(--light-green), var(--flax), var(--buff), var(--coral));
 }
 
-.rainbow-text {
-	color: transparent;
-	display: inline-block;
-	background-size: 500% auto;
-	background: linear-gradient(
-			to right,
-			#ff6663,
-			#feb144,
-			#fdfd97,
-			#9ee09e,
-			#9ec1cf,
-			#cc99c9,
-			#9ec1cf,
-			#9ee09e,
-			#fdfd97,
-			#feb144,
-			#ff6663
-		)
-		0 0 / 200% 100%;
-	background-clip: text;
-	animation: MOVING-RAINBOW-TEXT 10s infinite linear;
+html,
+body {
+	background: black 100% 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+	color: white;
 }
 
 button {
-	background-color: white;
-	border-radius: 0px;
-	transition: all 0.5s ease;
-}
-
-button:hover {
 	color: white;
-	border-radius: 20px;
-	transition: background-color 0.5s ease, all 0.5s ease;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 15px;
+	border: medium solid white;
+	transition: border-radius 0.5s, background 0.5s, border-color 0.5s;
+
+	&:hover {
+		border-radius: 30px;
+		border-color: black;
+		background-color: white;
+		color: black;
+	}
+
+	&:active {
+		background-color: black;
+		color: white;
+	}
 }

@@ -1,6 +1,5 @@
 <script>
-	import Banner from "$lib/ui/home/Banner.svelte";
-	export const ssr = false;
+	import Banner from "../components/home/Banner.svelte";
 </script>
 
 <Banner />

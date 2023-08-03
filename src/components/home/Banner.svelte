@@ -1,5 +1,5 @@
 <div class="text-center">
-	<h1 class="font-bold rainbow-text">
+	<h1 class="font-bold">
 		<span class="banner-big-text">games!</span><br />
 		<span class="text-4xl">that's- that's it i guess</span>
 	</h1>
