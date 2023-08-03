@@ -3,7 +3,12 @@ const config = {
 	content: ["./src/**/*.{html,js,svelte,ts}"],
 
 	theme: {
-		extend: {}
+		colors: {
+			blue: "#FFD36E",
+			mint: "#99FFCD",
+			yellow: "#FFF56D",
+			orange: "#FFD36E"
+		}
 	},
 
 	plugins: []
