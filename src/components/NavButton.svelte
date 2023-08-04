@@ -5,12 +5,12 @@
 	export let hoverColor: string;
 
 	const colorVariants: Record<string, string> = {
-		blue: `hover:bg-gradient-to-r from-[#9FB4FF]`,
-		mint: `hover:bg-gradient-to-r from-[#99FFCD]`,
-		yellow: `hover:bg-gradient-to-r from-[#FFF56D]`,
-		orange: `hover:bg-gradient-to-r from-[#FFD36E]`,
-		login: "hover:bg-gradient-to-r from-[#9FB4FF] to-[#99FFCD]",
-		signup: "hover:bg-gradient-to-r from-[#FFF56D] to-[#FFD36E]"
+		red: `hover:bg-gradient-to-r from-[#FF6663]`,
+		blue: `hover:bg-gradient-to-r from-[#9EC1CF]`,
+		yellow: `hover:bg-gradient-to-r from-[#FDFD97]`,
+		green: `hover:bg-gradient-to-r from-[#9EE09E]`,
+		login: "hover:bg-gradient-to-r from-[#FF6663] to-[#FDFD97] via-[#FEB144]",
+		signup: "hover:bg-gradient-to-r from-[#9EC1CF] to-[#CC99C9] via-[#9EE09E]"
 	};
 </script>
 
