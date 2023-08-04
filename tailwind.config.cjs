@@ -4,10 +4,12 @@ const config = {
 
 	theme: {
 		colors: {
-			blue: "#FFD36E",
-			mint: "#99FFCD",
-			yellow: "#FFF56D",
-			orange: "#FFD36E"
+			red: "#FF6663",
+			orange: "#FEB144",
+			yellow: "#FDFD97",
+			green: "#9EE09E",
+			blue: "#9EC1CF",
+			violet: "#CC99C9"
 		}
 	},
 

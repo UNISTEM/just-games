@@ -30,10 +30,10 @@
 	<h3 class="smth-happened-text font-semibold italic text-2xl">{getSmthHappenedText()}</h3>
 	<div class="error">
 		<span class="text-[50px] font-semibold">error code</span>&nbsp;&nbsp;&nbsp;&nbsp;
-		<span class="error-code text-[200px] font-bold rainbow-text">{$page.status}</span>
+		<span class="error-code text-[200px] font-bold gradient-text">{$page.status}</span>
 	</div>
 	<h4 class="text-1xl italic font-semibold">
-		so what i got was <span class="rainbow-text">{`"${$page.error?.message}"`}</span>, do with that what you will
+		so what i got was <span class="gradient-text">{`"${$page.error?.message}"`}</span>, do with that what you will
 	</h4>
 </div>
 

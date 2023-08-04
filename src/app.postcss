@@ -34,12 +34,11 @@ body {
 
 a {
 	text-decoration: underline;
-	color: white 50%;
+	color: white 75%;
 }
 
 * {
 	color: white;
-	border-radius: 20%;
 }
 
 button {
@@ -64,26 +63,23 @@ button {
 	}
 }
 
-.gradient {
-	background-image: var(--rainbow-gradient) 0 0 / 200% 100%;
-	background: 200% 100%;
-	background-clip: text;
-	color: transparent;
-	display: inline-block;
-}
-
-@keyframes MOVING-RAINBOW-TEXT {
+@keyframes MOVING-gradient-text {
 	to {
 		background-position: var(--bg-size) 0;
 	}
 }
 
-.rainbow-text {
+.gradient-text {
 	--bg-size: 400%;
 	color: rgba(255, 255, 255, 25%);
 	display: inline-block;
 	background-size: 400% auto;
 	background: var(--gradient-image);
 	background-clip: text;
-	animation: MOVING-RAINBOW-TEXT 20s infinite linear;
+	transition: color 0.5s ease;
+	animation: MOVING-gradient-text 20s infinite linear;
+
+	&a:hover {
+		color: rgba(255, 255, 255, 75%);
+	}
 }
