@@ -9,7 +9,10 @@ const config = {
 			yellow: "#FDFD97",
 			green: "#9EE09E",
 			blue: "#9EC1CF",
-			violet: "#CC99C9"
+			violet: "#CC99C9",
+			white: "white",
+			transparent: "transparent",
+			black: "black",
 		}
 	},
 
