@@ -12,7 +12,7 @@ const config = {
 			violet: "#CC99C9",
 			white: "white",
 			transparent: "transparent",
-			black: "black",
+			black: "black"
 		}
 	},
 
