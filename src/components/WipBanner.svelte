@@ -1,6 +1,6 @@
-<div class="wip-banner gradient font-semibold">
-	<h1 class="text-4xl font-bold">it's a <span class="rainbow-text">work in progress! 🛠️</span></h1>
-	<h2 class="text-2xl">head back to <a href="/" class="rainbow-text">home</a>...maybe?</h2>
+<div class="wip-banner font-semibold">
+	<h1 class="text-4xl font-bold">it's a <span class="gradient-text">work in progress! 🛠️</span></h1>
+	<h2 class="text-2xl">head back to <a href="/" class="gradient-text">home</a>...maybe?</h2>
 	<h3>i mean there's not much to do or see on this page so 🤷</h3>
 	<h4>god why am i so awkward</h4>
 	<br />
@@ -11,7 +11,7 @@
 		class="wip-photo"
 	/><br />
 	<h3 class="font-normal">
-		(enjoy the uncalled-for <a href="https://www.gettyimages.com/photos/work-in-progress-sign" class="rainbow-text">
+		(enjoy the uncalled-for <a href="https://www.gettyimages.com/photos/work-in-progress-sign" class="gradient-text">
 			stock image!</a
 		>)
 	</h3>

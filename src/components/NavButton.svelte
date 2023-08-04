@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { palette } from "$lib/palette";
 	export let anchor: string;
 	export let text: string;
 	export let hoverColor: string;
@@ -15,3 +14,9 @@
 </script>
 
 <button class={colorVariants[hoverColor]}><a class="no-underline" href={anchor}>{text}</a></button>
+
+<style>
+	button:hover {
+		box-shadow: 7px 7px #ffffff;
+	}
+</style>
