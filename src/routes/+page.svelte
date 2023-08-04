@@ -1,5 +1,5 @@
 <script>
-	import Banner from "../components/home/Banner.svelte";
+	import HomeBanner from "../components/home/HomeBanner.svelte";
 </script>
 
-<Banner />
+<HomeBanner />

@@ -4,11 +4,27 @@
 @tailwind utilities;
 
 :root {
-	--light-green: #abe188;
-	--flax: #f7ef99;
-	--buff: #f1bb87;
-	--coral: #f78e69;
-	--palette-gradient: linear-gradient(to right, var(--light-green), var(--flax), var(--buff), var(--coral));
+	--red: #ff6663;
+	--orange: #feb144;
+	--yellow: #fdfd97;
+	--green: #9ee09e;
+	--blue: #9ec1cf;
+	--violet: #cc99c9;
+	--gradient-image: linear-gradient(
+			to right,
+			#ff6663,
+			#feb144,
+			#fdfd97,
+			#9ee09e,
+			#9ec1cf,
+			#cc99c9,
+			#9ec1cf,
+			#9ee09e,
+			#fdfd97,
+			#feb144,
+			#ff6663
+		)
+		0 0 / 400% 100%;
 }
 
 html,
@@ -18,6 +34,7 @@ body {
 
 a {
 	text-decoration: underline;
+	color: white 50%;
 }
 
 * {
@@ -38,6 +55,7 @@ button {
 		border-color: black;
 		background-color: white;
 		color: black;
+		box-shadow: 7px 7px #ffffff;
 	}
 
 	&:active {
@@ -52,4 +70,20 @@ button {
 	background-clip: text;
 	color: transparent;
 	display: inline-block;
+}
+
+@keyframes MOVING-RAINBOW-TEXT {
+	to {
+		background-position: var(--bg-size) 0;
+	}
+}
+
+.rainbow-text {
+	--bg-size: 400%;
+	color: rgba(255, 255, 255, 25%);
+	display: inline-block;
+	background-size: 400% auto;
+	background: var(--gradient-image);
+	background-clip: text;
+	animation: MOVING-RAINBOW-TEXT 20s infinite linear;
 }

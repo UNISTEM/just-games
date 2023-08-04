@@ -1,12 +1,11 @@
 <script>
-	import { palette } from "$lib/palette";
 	import NavButton from "./NavButton.svelte";
 
 	let buttonData = [
-		["/", "home 🏡", "yellow"],
-		["/games", "games 🎮", "orange"],
+		["/", "home 🏡", "red"],
+		["/games", "games 🎮", "yellow"],
 		["/about", "about 🌈", "blue"],
-		["/resources", "resources 🧰", "mint"],
+		["/resources", "resources 🧰", "green"],
 		["/login", "log in 🚪", "login"],
 		["/signup", "sign up ✨", "signup"]
 	];
