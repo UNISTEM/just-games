@@ -1,7 +1,16 @@
 <script lang="ts">
-	export let anchor: string;
+	import { page } from "$app/stores";
+
+	export let link: string;
 	export let text: string;
+
+	function urlMatchesAnchor(): boolean {
+		let pathname = $page.url.pathname;
+		return link === "/" ? pathname === "/" : pathname.startsWith(link);
+	}
+
+	const anchorClass = urlMatchesAnchor() ? "gradient-text" : "";
+	const buttonClass = urlMatchesAnchor() ? "hover:bg-black hover:border-white" : "";
 </script>
 
-<button class="hover:bg-black hover:border-white"><a class="no-underline gradient-text" href={anchor}>{text}</a></button
->
+<button class={buttonClass}><a class={`no-underline ${anchorClass}`} href={link}>{text}</a></button>
