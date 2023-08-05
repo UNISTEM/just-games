@@ -1,7 +1,9 @@
 <script>
-	import GameButton from "../components/home/GameButton.svelte";
-	import HomeBanner from "../components/home/HomeBanner.svelte";
+	import GamePageButton from "$lib/components/home/GamePageButton.svelte";
+	import GamesCarousel from "$lib/components/home/GamesCarousel.svelte";
+	import HomeBanner from "$lib/components/home/HomeBanner.svelte";
 </script>
 
 <HomeBanner />
-<GameButton />
+<GamePageButton />
+<GamesCarousel />

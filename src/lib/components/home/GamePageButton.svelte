@@ -1,11 +1,11 @@
 <script lang="ts">
 	let gameButton: HTMLButtonElement;
-	let anchorText = "🎮 ";
+	let anchorText = "take me to the games!";
 
 	function extendByOneArrow() {
-		if (anchorText !== "🎮") {
+		if (anchorText !== "take me to the games!") {
 			anchorText += "→";
-			setTimeout(extendByOneArrow, 50);
+			setTimeout(extendByOneArrow, 100);
 		}
 	}
 </script>
@@ -19,9 +19,9 @@
 			extendByOneArrow();
 		}}
 		on:mouseleave={() => {
-			anchorText = "🎮";
+			anchorText = "take me to the games!";
 		}}
 	>
-		<a href="/games" class="text-4xl font-bold no-underline">{anchorText}</a></button
+		<a href="/games" class="text-4xl font-bold">{anchorText}</a></button
 	>
 </div>
