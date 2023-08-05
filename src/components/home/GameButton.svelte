@@ -1,11 +1,10 @@
 <script lang="ts">
-	let anchorText = "take me to the games!";
-	let arrowsSpawned = 0;
+	let gameButton: HTMLButtonElement;
+	let anchorText = "🎮 ";
 
 	function extendByOneArrow() {
-		if (!anchorText.startsWith("take me to the games!")) {
+		if (anchorText !== "🎮") {
 			anchorText += "→";
-			arrowsSpawned++;
 			setTimeout(extendByOneArrow, 50);
 		}
 	}
@@ -13,16 +12,16 @@
 
 <div class="grid justify-center items-center grid-rows-2">
 	<button
-		class="p-10 mt-10 bg-gradient-to-r from-red to-yellow via-orange rounded-2xl hover:bg-gradient-to-r hover:from-blue hover:to-violet hover:via-green hover:3xl transition-all ease-linear duration-[0.5]"
+		class="p-10 mt-10 rounded-2xl hover:bg-gradient-to-r hover:3xl transition-all ease-linear duration-[0.5]"
+		bind:this={gameButton}
 		on:mouseenter={() => {
 			anchorText = "🎮 ";
 			extendByOneArrow();
 		}}
 		on:mouseleave={() => {
-			anchorText = "take me to the games!";
-			arrowsSpawned = 0;
+			anchorText = "🎮";
 		}}
 	>
-		<a href="/games" class="text-4xl font-bold">{anchorText}</a></button
+		<a href="/games" class="text-4xl font-bold no-underline">{anchorText}</a></button
 	>
 </div>

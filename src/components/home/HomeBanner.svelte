@@ -8,8 +8,10 @@
 		<em>every 200 years</em><br />
 	</h2>
 	<div class="italic">
-		<span class="text-red underline font-black"
-			>do not play in class! your teacher can see through the <span class="text-[#AAA9AD] underline">metal.</span></span
+		<span class="text-red font-black"
+			>do not play in class! your teacher can <a class="underline" href="https://hapara.com/"
+				>see through the <span class="text-[#AAA9AD] underline">metal.</span></a
+			></span
 		><br />
 		<span class="gradient-text m-0 font-semibold">(i'm kidding do whatever u want just don't get caught)</span>
 	</div>
