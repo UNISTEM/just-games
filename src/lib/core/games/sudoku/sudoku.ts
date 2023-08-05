@@ -1,8 +1,8 @@
-import { GameMetadata } from "$lib/core/game"
+import type { GameMetadata } from "$lib/core/game";
 
-export const sudoku = new GameMetadata(
-    "sudoku",
-    "that one number filling game that has like a gazillion variations",
-    "fill out the numbers but these aren't taxes baby, this is sudoku!",
-    "🔢"
-);
+export const sudoku: GameMetadata = {
+	name: "sudoku",
+	aka: "that one number filling game that has like a gazillion variations",
+	description: "fill out the numbers but these aren't taxes baby, this is sudoku!",
+	emoji: "🔢"
+};

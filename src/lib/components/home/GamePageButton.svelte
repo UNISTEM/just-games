@@ -10,9 +10,9 @@
 	}
 </script>
 
-<div class="grid justify-center items-center grid-rows-2">
+<div class="grid justify-center items-center">
 	<button
-		class="p-10 mt-10 rounded-2xl hover:bg-gradient-to-r hover:3xl transition-all ease-linear duration-[0.5]"
+		class="game-button p-10 mt-8 rounded-2xl hover:bg-black hover:border-white box- hover:3xl transition-all ease-linear duration-[0.5]"
 		bind:this={gameButton}
 		on:mouseenter={() => {
 			anchorText = "🎮 ";
@@ -22,6 +22,6 @@
 			anchorText = "take me to the games!";
 		}}
 	>
-		<a href="/games" class="text-4xl font-bold">{anchorText}</a></button
+		<a href="/games" class="text-4xl font-bold gradient-text">{anchorText}</a></button
 	>
 </div>
