@@ -1,5 +1,5 @@
 <script>
-	import WipBanner from "../../components/WipBanner.svelte";
+	import WipBanner from "$lib/components/WipBanner.svelte";
 </script>
 
 <WipBanner />
