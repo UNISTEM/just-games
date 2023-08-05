@@ -3,23 +3,26 @@
 	import NavButton from "./NavButton.svelte";
 
 	let buttonData = [
-		["/", "home 🏡", "red"],
-		["/games", "games 🎮", "yellow"],
-		["/about", "about 🌈", "blue"],
-		["/resources", "resources 🧰", "green"],
-		["/login", "log in 🚪", "login"],
-		["/signup", "sign up ✨", "signup"]
+		["/", "home 🏡"],
+		["/games", "games 🎮"],
+		["/about", "about 🌈"],
+		["/resources", "resources 🧰"],
+		["/login", "log in 🚪"],
+		["/signup", "sign up ✨"]
 	];
 </script>
 
-<header class="navbar h-14 grid-cols-10">
+<header class="navbar h-14">
+	<hr class="m-0 mb-5" />
 	<div class="float-left mt-3"><NameLabel /></div>
 	<div class="text-2xl font-semibold grid-cols-6 font-sans inline-grid nobr float-right">
 		{#each buttonData as button}
-			<NavButton anchor={button[0]} text={button[1]} hoverColor={button[2]} />
+			<NavButton anchor={button[0]} text={button[1]} />
 		{/each}
 	</div>
 </header>
+<br />
+<hr class="-mt-1 m-0 mb-5 ml-[3.2rem] mr-[3.2rem]" />
 
 <style>
 	.navbar {

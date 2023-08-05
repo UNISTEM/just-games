@@ -9,7 +9,7 @@
 	</h2>
 	<div class="italic">
 		<span class="text-red font-black"
-			>do not play in class! your teacher can <a class="underline" href="https://hapara.com/"
+			>do not play in class! your teacher can <a target="_blank" class="underline" href="https://hapara.com/"
 				>see through the <span class="text-[#AAA9AD] underline">metal.</span></a
 			></span
 		><br />

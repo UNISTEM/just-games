@@ -64,23 +64,34 @@ button {
 	}
 }
 
-@keyframes MOVING-gradient-text {
+@keyframes MOVING-GRADIENT-TEXT {
 	to {
-		background-position: var(--bg-size) 0;
+		background-position: 400% 0;
 	}
 }
 
-.gradient-text {
-	--bg-size: 400%;
+.gradient-text,
+.links-footer a,
+hr {
 	color: rgba(255, 255, 255, 25%);
-	display: inline-block;
+	display: inline;
 	background-size: 400% auto;
 	background: var(--gradient-image);
 	background-clip: text;
 	transition: color 0.5s ease;
-	animation: MOVING-gradient-text 20s infinite linear;
+	animation: MOVING-GRADIENT-TEXT 15s infinite linear;
 
 	&a:hover {
 		color: rgba(255, 255, 255, 75%);
 	}
+}
+
+hr {
+	height: 5px;
+	border-radius: 3px;
+	display: flex;
+	background-origin: content-box;
+	color: transparent;
+	background-clip: content-box;
+	margin: 30px 3.2rem 30px 3.2rem;
 }
