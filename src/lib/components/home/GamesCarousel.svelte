@@ -16,6 +16,7 @@
 		padding-left: 42px;
 		padding-right: 42px;
 		display: grid;
+		height: fit-content;
 		grid-auto-flow: column;
 		grid-auto-columns: 10%;
 		overflow-x: auto;
