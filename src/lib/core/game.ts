@@ -30,11 +30,6 @@ export type GameMetadata = {
 	 * Don't ask me why.
 	 */
 	jpName: string;
-
-	/**
-	 * Katakana (カタカナ) representation of the game name.
-	 */
-	katakana: string;
 };
 
 /**
