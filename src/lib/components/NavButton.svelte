@@ -19,7 +19,7 @@
 		buttonClass = urlMatchesAnchor() ? "hover:bg-black hover:border-white" : "";
 	}
 
-	afterNavigate((_) => updateHtmlClasses());
+	afterNavigate(() => updateHtmlClasses());
 	onMount(updateHtmlClasses);
 </script>
 
