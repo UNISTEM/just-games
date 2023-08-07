@@ -2,8 +2,8 @@
 	import type { GameMetadata } from "$lib/core/game";
 
 	export let gameData: GameMetadata;
-	export let gameName: string | undefined;
-	export let gameJpName: string | undefined;
+	export let gameName: string | undefined = undefined;
+	export let gameJpName: string | undefined = undefined;
 </script>
 
 <div>

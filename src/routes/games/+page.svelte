@@ -1,5 +1,5 @@
 <script>
-	import WipBanner from "$lib/components/WipBanner.svelte";
+	import GamesCarousel from "$lib/components/games/GamesCarousel.svelte";
 </script>
 
-<WipBanner />
+<GamesCarousel />
