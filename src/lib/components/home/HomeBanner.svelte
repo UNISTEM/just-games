@@ -9,8 +9,10 @@
 	</h2>
 	<div class="italic">
 		<span class="text-red font-black"
-			>do not play in class! your teacher can <a target="_blank" class="underline" href="https://hapara.com/"
-				>see through the <span class="text-[#AAA9AD] underline">metal.</span></a
+			>do not play in class! <span class="text-white font-bold"
+				>your teacher can <a target="_blank" class="underline text-red font-black" href="https://hapara.com/"
+					>see through the <span class="text-[#AAA9AD] underline">metal</span></a
+				>.</span
 			></span
 		><br />
 		<span class="gradient-text m-0 font-semibold">(i'm kidding do whatever u want just don't get caught)</span>
