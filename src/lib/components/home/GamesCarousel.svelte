@@ -1,14 +1,20 @@
 <script lang="ts">
 	import { allGames } from "$lib/core/game";
 	import CarouselGameItem from "./CarouselGameItem.svelte";
+	import GameCarouselHelpText from "./GameCarouselHelpText.svelte";
+
+	export let gameName: string | undefined;
+	export let gameJpName: string | undefined;
 </script>
 
 <hr />
 <div class="games-carousel">
 	{#each allGames as gameData}
-		<CarouselGameItem {gameData} />
+		<CarouselGameItem {gameData} bind:gameName bind:gameJpName />
 	{/each}
 </div>
+<br />
+<GameCarouselHelpText {gameName} {gameJpName} />
 <hr />
 
 <style>

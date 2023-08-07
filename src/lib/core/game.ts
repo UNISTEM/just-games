@@ -37,3 +37,7 @@ export type GameMetadata = {
  * Ideally the games are each on their own route and implemented independent from a class/structure - this list is purely for purposes like listing them on the `/games` route.
  */
 export const allGames = [minesweeper, sudoku, wordle, chess, mastermind, snake];
+
+export function mapJpNameToName(jpName: string): string {
+	return allGames.filter((gameData, _) => gameData.jpName == jpName)[0].name;
+}
