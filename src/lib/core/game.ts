@@ -1,3 +1,4 @@
+import lodash from "lodash";
 import { chess } from "./games/chess/chess";
 import { mastermind } from "./games/mastermind/mastermind";
 import { minesweeper } from "./games/minesweeper/minesweeper";
@@ -8,7 +9,7 @@ import { wordle } from "./games/wordle/wordle";
 /**
  * The metadata of a game.
  */
-export type GameMetadata = {
+export class GameMetadata {
 	/**
 	 * The name of the game.
 	 */
@@ -30,7 +31,24 @@ export type GameMetadata = {
 	 * Don't ask me why.
 	 */
 	jpName: string;
-};
+
+	constructor(name: string, aka: string, description: string, jpName: string) {
+		this.name = name;
+		this.aka = aka;
+		this.description = description;
+		this.jpName = jpName;
+	}
+
+	getRouteToGame(): string {
+		return `/games/${name}`;
+	}
+
+	getGameSearchName(): string {
+		// No one expects this. Haha!
+		const zeroWidthSpace = "​";
+		return lodash.join([this.name, this.jpName, this.description, this.aka], zeroWidthSpace);
+	}
+}
 
 /**
  * All of the games implemented and up for display.
