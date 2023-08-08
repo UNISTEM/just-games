@@ -58,12 +58,6 @@
 		margin-right: 10px;
 		line-height: 3rem;
 		transition: all 0.5s ease;
-
-		&:hover {
-			background-image: black;
-			border-color: white;
-			color: transparent;
-		}
 	}
 
 	::-webkit-scrollbar-track {
