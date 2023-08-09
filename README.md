@@ -1,38 +1,52 @@
-# create-svelte
+# just games!
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+what the title says. it's more coding practice, and i get to play games i made. win-win!
 
-## Creating a project
+i love svelte
 
-If you're seeing this, you've probably already done this step. Congrats!
+## what games do u have?
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+like _nothing right now_
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+but i do have some that will kick this off though:
 
-## Developing
+- chess
+- mastermind
+- minesweeper
+- snake
+- sudoku
+- wordle
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+yeah and i'll add as i go
 
-```bash
-npm run dev
+man i should really get to that trello page soon
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## installation
 
-## Building
+1. clone the repo
+2. and run it!
 
-To create a production version of your app:
+ok i'll explain
 
-```bash
-npm run build
-```
+### 1. clone the repo
 
-You can preview the production build with `npm run preview`.
+`git clone developer-ramen/just-games`
+or in case ur bougie and have `gh` cli:
+`gh repo clone developer-ramen/just-games`
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+### 2. and run it!
+
+`npm` is a REQUIREMENT for this project. i dont care if u dont have it, google `install npm`. i'll wait.
+
+`cd just-games`
+`npm run dev -- --open` to develop, or `npm run build` to build and `npm run preview` to actually see the page
+
+## how do i play?
+
+like just click on the website and play?
+
+i dunno i haven't thought about how to add instructions to the games yet
+
+## Why are you talking in all lowercase?
+
+i dunno i just like it stop pestering me about it
