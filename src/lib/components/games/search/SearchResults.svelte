@@ -1,7 +1,8 @@
 <script lang="ts">
-	import { allGames, GameMetadata } from "$lib/core/game";
+	import type { GameMetadata } from "$lib/core/game";
 	import pluralize from "pluralize";
 	import SearchResult from "./SearchResult.svelte";
+	import { allGames } from "$lib/core/allGames";
 
 	export let searchTerm: string;
 	export let searchResults: GameMetadata[] = [];
