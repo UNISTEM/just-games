@@ -1,4 +1,4 @@
-import { GameMetadata } from "../../game";
+import { GameMetadata } from "$lib/core/game";
 
 export const chess = new GameMetadata(
 	"chess",

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import lodash, { slice } from "lodash";
-	import { allGames } from "$lib/core/game";
+	import { allGames } from "$lib/core/allGames";
 	import CarouselGameItem from "./CarouselGameItem.svelte";
 	import GameCarouselHelpText from "./GameCarouselHelpText.svelte";
 
