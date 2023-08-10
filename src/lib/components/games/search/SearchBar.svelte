@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let searchTerm: string = "";
+	export let searchTerm = "";
 </script>
 
 <div class="flex justify-center mt-5">

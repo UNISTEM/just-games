@@ -12,5 +12,5 @@ import { wordle } from "./games/wordle/wordle";
 export const allGames = [minesweeper, sudoku, wordle, chess, mastermind, snake];
 
 export function mapJpNameToName(jpName: string): string {
-	return allGames.filter((gameData, _) => gameData.jpName == jpName)[0].name;
+	return allGames.filter((gameData) => gameData.jpName == jpName)[0].name;
 }
