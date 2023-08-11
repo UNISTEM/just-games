@@ -1,29 +1,15 @@
 <script lang="ts">
-	import GoogleImitationTitle from "./search/GoogleImitationTitle.svelte";
-	import GoogleBannerImitation from "./search/GoogleBannerImitation.svelte";
-	import SearchSection from "./search/SearchSection.svelte";
+	import GoogleImitationTitle from "./GoogleImitationTitle.svelte";
+	import GoogleBannerImitation from "./GoogleBannerImitation.svelte";
+	import SearchResults from "./search/SearchResults.svelte";
 	import type { GameMetadata } from "$lib/core/game";
+	import SearchBar from "./search/SearchBar.svelte";
 
-	let titleHovered = false;
 	let searchResults: GameMetadata[];
+	let searchTerm = "";
 </script>
 
-<div class="flex justify-center mb-7 -m-8">
-	<h1
-		class="text-[100px] font-bold"
-		on:mouseenter={() => {
-			titleHovered = true;
-		}}
-		on:mouseleave={() => {
-			titleHovered = false;
-		}}
-	>
-		{#if titleHovered}
-			<span class="gradient-text text-3xl">yes i know im imitating google shut up</span>
-		{:else}
-			<GoogleImitationTitle />
-		{/if}
-	</h1>
-</div>
+<GoogleImitationTitle />
 <GoogleBannerImitation {searchResults} />
-<SearchSection bind:searchResults />
+<SearchBar bind:searchTerm />
+<SearchResults bind:searchTerm bind:searchResults />

@@ -34,7 +34,7 @@ export class GameMetadata {
 	}
 
 	getRouteToGame(): string {
-		return `/games/${name}`;
+		return `/games/${this.name}`;
 	}
 
 	getGameSearchName(): string {
