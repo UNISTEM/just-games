@@ -1,6 +1,6 @@
 <script>
 	import GamesCarousel from "$lib/components/games/GamesCarousel.svelte";
-	</script>
+</script>
 
 <svelte:head>
 	<title>🏡 - just games!</title>
