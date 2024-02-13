@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { goto } from "$app/navigation";
+
 	let gameButton: HTMLButtonElement;
 	let anchorText = "take me to the games!";
 
@@ -12,7 +14,7 @@
 
 <div class="grid justify-center items-center">
 	<button
-		class="game-button p-10 mt-8 rounded-2xl hover:bg-black hover:border-white box- hover:3xl transition-all ease-linear duration-[0.5]"
+		class="p-10 mt-8 rounded-2xl hover:bg-black hover:border-white hover:3xl transition-all ease-linear duration-[0.5]"
 		bind:this={gameButton}
 		on:mouseenter={() => {
 			anchorText = "🎮 ";
@@ -20,6 +22,9 @@
 		}}
 		on:mouseleave={() => {
 			anchorText = "take me to the games!";
+		}}
+		on:click={() => {
+			goto("/games");
 		}}
 	>
 		<a href="/games" class="text-4xl font-bold gradient-text">{anchorText}</a></button

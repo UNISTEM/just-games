@@ -16,7 +16,7 @@
 	<nav>
 		<hr class="m-0 mb-5" />
 		<div class="float-left mt-3"><NameLabel /></div>
-		<div class="text-2xl font-semibold grid-cols-6 font-sans inline-grid nobr float-right">
+		<div class="text-2xl font-semibold grid-cols-6 font-sans inline-grid nobr float-right mr-[22px]">
 			{#each buttonData as button}
 				<NavButton link={button[0]} text={button[1]} />
 			{/each}

@@ -9,7 +9,6 @@
 		<br />
 		<a target="_blank" href="https://github.com/developer-ramen/just-games">github repo</a>&nbsp;
 		<a target="_blank" href="https://github.com/developer-ramen/just-games/issues">report an issue</a>&nbsp;
-		<a target="_blank" href="https://google.com">to-do (trello link, to be set up soon)</a>
 		<br />
 		made by <a target="_blank" href="https://github.com/developer-ramen">me!</a>
 		with <span class="gradient-text">lots of love ❤️</span> and

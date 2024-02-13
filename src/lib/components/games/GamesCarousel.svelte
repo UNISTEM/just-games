@@ -1,11 +1,10 @@
 <script lang="ts">
 	import lodash from "lodash";
 	import { allGames } from "$lib/core/allGames";
-	import CarouselGameItem from "./CarouselGameItem.svelte";
+	import GameCarouselItem from "./GameCarouselItem.svelte";
 	import GameCarouselHelpText from "./GameCarouselHelpText.svelte";
 
 	export let gameName: string | undefined = undefined;
-	export let gameJpName: string | undefined = undefined;
 
 	let currentPage = 0;
 
@@ -25,13 +24,13 @@
 <hr />
 <div class="games-carousel">
 	{#each lodash.slice(allGames, currentPage * 10, currentPage * 10 + 10) as gameData}
-		<CarouselGameItem {gameData} bind:gameName bind:gameJpName />
+		<GameCarouselItem {gameData} bind:gameName />
 	{/each}
 </div>
 <br />
 <div class="flex justify-center">
 	<button class="page-nav-button gradient-text" on:click={toPreviousPage}>←</button>&nbsp;&nbsp;
-	<span class="mt-[0.875rem]"><GameCarouselHelpText {gameName} {gameJpName} /></span>
+	<span class="mt-[0.875rem]"><GameCarouselHelpText {gameName} /></span>
 	<button class="page-nav-button gradient-text" on:click={toNextPage}>→</button>
 </div>
 <hr />

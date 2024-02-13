@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { afterNavigate } from "$app/navigation";
+	import { afterNavigate, goto } from "$app/navigation";
 	import { page } from "$app/stores";
 	import { onMount } from "svelte";
 
@@ -23,4 +23,11 @@
 	onMount(updateHtmlClasses);
 </script>
 
-<button class={buttonClass}><a class={`no-underline ${anchorClass}`} href={link}>{text}</a></button>
+<button
+	class={buttonClass}
+	on:click={() => {
+		goto(link);
+	}}
+>
+	<a class={`no-underline ${anchorClass}`} href={link}>{text}</a>
+</button>

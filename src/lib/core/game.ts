@@ -1,5 +1,3 @@
-import lodash from "lodash";
-
 /**
  * The metadata of a game.
  */
@@ -10,36 +8,16 @@ export class GameMetadata {
 	name: string;
 
 	/**
-	 * Another name that represents the game.
-	 * Be comedic.
+	 * Alternate name. To be expanded.
 	 */
-	aka: string;
+	altName: string;
 
-	/**
-	 * The description of a game.
-	 */
-	description: string;
-
-	/**
-	 * The character(s) that represents the game.
-	 * Don't ask me why.
-	 */
-	jpName: string;
-
-	constructor(name: string, aka: string, description: string, jpName: string) {
+	constructor(name: string, altName: string) {
 		this.name = name;
-		this.aka = aka;
-		this.description = description;
-		this.jpName = jpName;
+		this.altName = altName;
 	}
 
 	getRouteToGame(): string {
 		return `/games/${this.name}`;
-	}
-
-	getGameSearchName(): string {
-		// No one expects this. Haha!
-		const zeroWidthSpace = "​";
-		return lodash.join([this.name, this.jpName, this.description, this.aka], zeroWidthSpace);
 	}
 }

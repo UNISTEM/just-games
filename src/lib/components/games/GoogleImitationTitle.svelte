@@ -3,9 +3,9 @@
 	let titleHovered = false;
 </script>
 
-<div class="flex justify-center mb-7 -m-8">
+<div class="flex justify-center">
 	<h1
-		class="text-[100px] font-bold"
+		class="text-[80px] font-bold"
 		on:mouseenter={() => {
 			titleHovered = true;
 		}}
@@ -14,7 +14,7 @@
 		}}
 	>
 		{#if titleHovered}
-			<span class="gradient-text text-3xl">yes i know im imitating google shut up</span>
+			<span class="gradient-text text-3xl">eat your heart out google</span>
 		{:else}
 			<GoogleColoredTitle />
 		{/if}

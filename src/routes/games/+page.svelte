@@ -1,10 +1,9 @@
 <script>
 	import GamesCarousel from "$lib/components/games/GamesCarousel.svelte";
-	import GamesTextBanner from "$lib/components/games/GamesPageContent.svelte";
-</script>
+	</script>
 
 <svelte:head>
-	<title>🎮 - games index</title>
+	<title>🏡 - just games!</title>
 </svelte:head>
-<GamesTextBanner />
+
 <GamesCarousel />
