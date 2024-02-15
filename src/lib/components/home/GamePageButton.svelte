@@ -7,7 +7,7 @@
 	function extendByOneArrow() {
 		if (anchorText !== "take me to the games!") {
 			anchorText += "→";
-			setTimeout(extendByOneArrow, 100);
+			setTimeout(extendByOneArrow, 25);
 		}
 	}
 </script>

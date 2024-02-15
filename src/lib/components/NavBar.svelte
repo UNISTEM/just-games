@@ -5,10 +5,7 @@
 	let buttonData = [
 		["/", "home 🏡"],
 		["/games", "games 🎮"],
-		["/about", "about 🌈"],
-		["/resources", "resources 🧰"],
-		["/login", "log in 🚪"],
-		["/signup", "sign up ✨"]
+		["/repo", "repo 🐈‍⬛"]
 	];
 </script>
 

@@ -2,10 +2,8 @@
 	<p class="links-footer font-semibold text-center">
 		<a href="/">home 🏡</a>&nbsp;&nbsp;
 		<a href="/games">games 🎮</a>&nbsp;&nbsp;
-		<a href="/about">about 🌈</a>&nbsp;&nbsp;
-		<a href="/resources">resources 🧰</a>&nbsp;&nbsp;
-		<a href="/login">log in 🚪</a>&nbsp;&nbsp;
-		<a href="/signup">sign up ✨</a>
+		<a href="/repo">repo 🐈‍⬛</a>&nbsp;&nbsp;
+		<a href="https://www.standwithpalestine.au/">from the 🏞️ to the 🌅</a>
 		<br />
 		<a target="_blank" href="https://github.com/developer-ramen/just-games">github repo 🏺</a>&nbsp;&nbsp;
 		<a target="_blank" href="https://github.com/developer-ramen/just-games/issues">report a bug 🐛</a>&nbsp;&nbsp;
